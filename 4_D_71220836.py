@@ -20,5 +20,7 @@ try:
         print('Nilai anda adalah 1.0, apakah sudah ada pikiran untuk pindah jurusan?')
     elif nilai == 'E':
         print('Nilai anda adalah 0, niat kuliah nggak sih???')
+    else:
+        print('Inputan nilai yang Anda masukkan tidak valid')
 except:
-    print('Inputan nilai yang Anda masukkan tidak valid')
+    ()
