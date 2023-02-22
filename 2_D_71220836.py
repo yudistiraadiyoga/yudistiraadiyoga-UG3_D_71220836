@@ -1,13 +1,13 @@
-plat = input('Masukkan Plat Nomor :').split()
+plat = input('Masukkan Plat Nomor :').split()[1]
 print(plat)
-
+p = int(plat)
 try:
-    if plat[1]<=3000:
-        print(f'Plat nomor {plat} diperuntukan untuk mobil')
-    elif plat[1]>3000 and plat[1]<=4000:
-        print(f'Plat nomor {plat} diperuntukan untuk motor')
-    elif plat[1]>4000 and plat[1]<=5000:
-        print(f'Plat nomor {plat} diperuntukan untuk angkutan umum')
+    if p<=3000:
+        print(f'Plat nomor tersebut diperuntukan untuk mobil')
+    elif p>3000 and p<=4000:
+        print(f'Plat nomor tersebut diperuntukan untuk motor')
+    elif p>4000 and p<=5000:
+        print(f'Plat nomor tersebut diperuntukan untuk angkutan umum')
     else:
         print('Plat Nomor Tidak Terinidikasi, harus terdapat nomor kendaraan setelah kode Daerah')
 except:
